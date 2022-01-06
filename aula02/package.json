@@ -1,0 +1,22 @@
+{
+  "name": "aula02",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "node webapi.js",
+    "api1-ps": "Invoke-RestMethod http://localhost:3000 | tee logs/api1.log",
+    "api2-ps": "Invoke-RestMethod http://localhost:4000 | tee logs/api2.log",
+    "api1": "curl http://localhost:3000 | tee logs/api1.log",
+    "api2": "curl http://localhost:4000 | tee logs/api2.log",
+    "ex:01": "node examples/concat-streams-pass-through.js",
+    "ex:02": "node examples/assync-streams.js"
+  },
+  "dependencies": {
+    "axios": "^0.24.0"
+  },
+  "engines": {
+    "node": "^16.13.0"
+  }
+}
